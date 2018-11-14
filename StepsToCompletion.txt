@@ -1,0 +1,12 @@
+Steps to get to Finished Console Application:
+-Take the "POS_CLIA_DATA_DEC17.txt" file and import into Excel to clean up data.
+-Implimented the Text to Column feature to get data into a better state for import. 
+	-Fine tuned data with Fixed Width by using the "POS_CLIA_LAYOUT_DEC17.txt" file. 
+-Exported the Excel Information tab delimited as "Interview_Data.txt"
+
+-Started the development of the C# Colsole Application. 
+-Created Local SQL Database.
+-Originally I designed the program with StreamReader as the file reading method but found issues with the way some of the data was input. 
+-Switched to File.ReadAllLines() method, which worked out much better for this application.
+-For loop is still throwing "Index was out of bounds of the arry" exception but insert is completing in the SQL Server.
+
