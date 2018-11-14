@@ -13,7 +13,7 @@ namespace TextFileToDatabase
         static void Main(string[] args)
         {
             //File Location
-            string filePath = @"C:\Users\Cody\Documents\Visual Studio 2017\Projects\TxtToDatabase\Data\Interview_Data.txt";
+            string filePath = @"C:\Users\Cody\Documents\Visual Studio 2017\Projects\TextFileToDatabase\Data\Interview_Data.txt";
             List<string> lines = File.ReadAllLines(filePath).ToList();
 
 
