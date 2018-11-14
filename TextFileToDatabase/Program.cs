@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.Data.SqlClient;
 
@@ -39,6 +37,8 @@ namespace TextFileToDatabase
                     {
                         Counter++;
 
+
+
                         SqlCommand myCommand = new SqlCommand("INSERT INTO Interview_Hospitals.dbo.Test (City, HospitalName, Address, StateCode) Values (@City, @HospitalName, @Address, @StateCode)", myConnection);
 
                         myCommand.Parameters.AddWithValue("@City", Data[i]);
@@ -56,7 +56,7 @@ namespace TextFileToDatabase
             }
 
 
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
