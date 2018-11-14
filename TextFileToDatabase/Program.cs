@@ -18,6 +18,7 @@ namespace TextFileToDatabase
 
 
 
+            int Counter = 0;
 
             foreach (string line in lines)
             {
@@ -29,10 +30,10 @@ namespace TextFileToDatabase
                 myConnection.Open();
                 Console.WriteLine("Connected to DB.");
 
+
                 try
                 {
                     Console.WriteLine(line);
-                    int Counter = 0;
 
                     for (int i = 0; i < lines.Count; i++)
                     {
